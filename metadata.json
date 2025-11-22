@@ -1,0 +1,7 @@
+{
+  "name": "DinnerSeeker",
+  "description": "Smart dinner recommendations based on your location using Gemini and Google Maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
