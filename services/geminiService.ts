@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { Coordinates, Restaurant, Category } from "../types";
+import { Coordinates, Restaurant, Category } from "../types.ts";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

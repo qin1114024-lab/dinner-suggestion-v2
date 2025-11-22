@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { MapPin, Utensils, RefreshCw, AlertCircle, Search, ArrowRight, ChefHat } from 'lucide-react';
-import { Restaurant, Coordinates, Category, ViewMode } from './types';
-import { fetchRecommendations } from './services/geminiService';
-import RestaurantCard from './components/RestaurantCard';
-import CategoryFilter from './components/CategoryFilter';
+import { Restaurant, Coordinates, Category, ViewMode } from './types.ts';
+import { fetchRecommendations } from './services/geminiService.ts';
+import RestaurantCard from './components/RestaurantCard.tsx';
+import CategoryFilter from './components/CategoryFilter.tsx';
 
 const App: React.FC = () => {
   const [hasStarted, setHasStarted] = useState<boolean>(false);
@@ -57,7 +57,7 @@ const App: React.FC = () => {
           setRestaurants(data);
           setError(null);
         } catch (e) {
-          setError("取得餐廳資料失敗，請稍後再試 (Gemini API 可能忙碌中)");
+          setError("取得餐廳資料失敗，請稍後再試 (Gemini API 可能忙碌中或 API Key 未設定)");
         } finally {
           setLoading(false);
         }

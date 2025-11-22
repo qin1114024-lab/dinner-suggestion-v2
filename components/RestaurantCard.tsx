@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Restaurant } from '../types';
-import StarRating from './StarRating';
+import { Restaurant } from '../types.ts';
+import StarRating from './StarRating.tsx';
 import { MapPin, Globe, Calendar, MessageSquare, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 
 interface Props {

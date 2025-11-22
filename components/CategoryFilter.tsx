@@ -1,5 +1,5 @@
 import React from 'react';
-import { Category } from '../types';
+import { Category } from '../types.ts';
 
 interface Props {
   selected: string;
